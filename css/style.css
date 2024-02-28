@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper .information {
+  display: grid;
+  grid-template-columns: repeat(2, 840px 600px);
+  grid-template-rows: repeat(1, 534px);
+  width: 100%;
+  max-width: 840px;
+  min-height: 534px;
+  background-image: url(/imgs/table_and-chair.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.wrapper .information header {
+  padding: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 56px;
+  position: relative;
+}
+.wrapper .information header .burger {
+  display: none;
+}
+.wrapper .information header img {
+  width: 61px;
+  height: 13px;
+}
+.wrapper .information header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 31px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.67px;
+  color: #ffffff;
+}
+.wrapper .information header nav ul li:hover {
+  border-bottom: 3px solid #ffffff;
+}
+.wrapper .information header .btn {
+  display: none;
+}
+.wrapper .information .room .discover {
+  width: 400px;
+  height: 261px;
+  display: grid;
+  gap: 18px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 100px;
+}
+.wrapper .information .room .btn {
+  bottom: 0;
+  margin-bottom: -273px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  grid-template-rows: 80px;
+  gap: 0;
+}
+.wrapper .information .room .btn .right {
+  background: #000000;
+  border: none;
+  cursor: pointer;
+}
+.wrapper .information .room .btn .right:hover {
+  background: #444444;
+}
+.wrapper .information .room .btn .left {
+  background: #000000;
+  border: none;
+  cursor: pointer;
+}
+.wrapper .information .room .btn .left:hover {
+  background: #444444;
+}
+.wrapper .information .room h2 {
+  width: 500px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -2px;
+  color: #000000;
+}
+.wrapper .information .room p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.33px;
+  color: #a0a0a0;
+}
+.wrapper .information .room .shopping {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 12.5px;
+  color: #000000;
+  cursor: pointer;
+}
+.wrapper .information .room .shopping:hover {
+  color: #a0a0a0;
+}
+.wrapper .section-abaut {
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  grid-template-rows: repeat(1, 266px);
+}
+.wrapper .section-abaut .section-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .section-abaut .section-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 6.67px;
+  padding: 16px;
+  color: #000000;
+}
+.wrapper .section-abaut .section-info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.33px;
+  color: #a0a0a0;
+}
+
+@media (max-width: 790px) {
+  .container {
+    margin: 0 auto;
+    width: 100vh;
+    max-width: 375px;
+    padding: 20px;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 375px;
+    padding: 20px;
+  }
+  .wrapper .information {
+    background-size: 375px 360px;
+    display: grid;
+    grid-template-columns: repeat(1, 375px);
+    grid-template-rows: 375px 410px;
+  }
+  .wrapper .information header {
+    padding: 0;
+    background-size: 375px;
+  }
+  .wrapper .information header .burger {
+    display: block;
+  }
+  .wrapper .information header nav ul {
+    display: none;
+  }
+  .wrapper .information header .btn {
+    left: 203px;
+    top: 283px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 56px);
+    grid-template-rows: 56px;
+    gap: 0;
+  }
+  .wrapper .information header .btn .right {
+    background: #000000;
+    border: none;
+    cursor: pointer;
+  }
+  .wrapper .information header .btn .right:hover {
+    background: #444444;
+  }
+  .wrapper .information header .btn .left {
+    background: #000000;
+    border: none;
+    cursor: pointer;
+  }
+  .wrapper .information header .btn .left:hover {
+    background: #444444;
+  }
+  .wrapper .information .room {
+    padding: 0;
+  }
+  .wrapper .information .room .discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    width: 311px;
+    height: 278px;
+  }
+  .wrapper .information .room .discover h2 {
+    width: 311px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 36.8px;
+    letter-spacing: -1.67px;
+    color: #000000;
+  }
+  .wrapper .information .room .btn {
+    display: none;
+  }
+  .wrapper .section-abaut {
+    display: grid;
+    grid-template-columns: repeat(1, 375px);
+    grid-template-rows: 238px 303px 227px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .wrapper .section-abaut .section-info h4 {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 5.83px;
+  }
+  .wrapper .section-abaut img {
+    width: 100%;
+    max-width: 376px;
+    min-height: 238px;
+  }
+}
